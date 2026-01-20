@@ -1,0 +1,95 @@
+.app { max-width: 520px; margin: 0 auto; padding: 16px; font-family: system-ui; background: #fff; }
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.title { font-weight: 700; font-size: 18px; background: linear-gradient(45deg, #405de6, #833ab4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.icon-btn { border: 0; background: transparent; cursor: pointer; padding: 4px; }
+
+.timeline { display: flex; flex-direction: column; gap: 12px; }
+.card { border: 1px solid #ddd; border-radius: 12px; padding: 12px; background: #fff; }
+.card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.user { font-weight: 700; }
+.body { white-space: pre-wrap; }
+.photo {
+  width: 100%;
+  height: 280px;      /* 원하는 고정 높이 */
+  object-fit: cover;  /* 잘라서 꽉 채움 */
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  display: block;
+}
+
+.form-wrap { border: 1px solid #ddd; border-radius: 12px; padding: 12px; background: #fff; margin-bottom: 12px; }
+.form-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.form-title { font-weight: 700; }
+.label { display: block; font-size: 13px; margin-top: 10px; }
+.input { width: 100%; padding: 10px; box-sizing: border-box; margin-top: 6px; }
+.form-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
+
+.btn { padding: 8px 12px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 8px; }
+.btn.primary { background: linear-gradient(45deg, #405de6, #833ab4); color: #fff; border: none; }
+.preview { margin-top: 10px; }
+.preview-title { font-size: 12px; margin-bottom: 6px; color: #666; }
+.preview-img { width: 100%; border-radius: 10px; border: 1px solid #eee; }
+.card-foot { margin-top: 10px; display: flex; justify-content: flex-end; }
+.like-btn { border: none; background: linear-gradient(45deg, #405de6, #833ab4); color: #fff; border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.kebab-wrap { position: relative; }
+.kebab-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+.kebab-btn:hover { background: #f2f2f2; }
+
+.kebab-menu {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  min-width: 120px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.kebab-item {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+}
+.kebab-item:hover { background: #f6f6f6; }
+.kebab-item.danger { color: #d11a2a; }
+.kebab-item.danger:hover { background: #fff0f2; }
+
+.edit-area { margin-top: 10px; }
+
+
+
+
+.fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  z-index: 999;
+
+  display: grid;
+  place-items: center;
+
+  background: linear-gradient(45deg, #405de6, #833ab4);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.fab:hover { transform: translateY(-1px); }
+
