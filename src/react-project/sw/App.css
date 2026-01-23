@@ -18,7 +18,17 @@
   display: block;
 }
 
-.form-wrap { border: 1px solid #ddd; border-radius: 12px; padding: 12px; background: #fff; margin-bottom: 12px; }
+.form-wrap {
+  max-width: 500px;
+  margin: 0 auto 12px;
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;   /* ⭐ 여기 */
+  background: #fff;
+
+  overflow: hidden;      /* ⭐ 이거 중요 */
+}
 .form-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 .form-title { font-weight: 700; }
 .label { display: block; font-size: 13px; margin-top: 10px; }
